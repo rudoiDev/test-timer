@@ -38,6 +38,9 @@ inputEl.addEventListener('input', () => {
 });
 
 buttonEl.addEventListener('click', () => {
+	if (inputEl.value == 0) {
+		return
+	}
   if (!totalTime == 0) {
     clearInterval(intervalId);
   }
